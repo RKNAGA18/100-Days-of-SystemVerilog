@@ -15,7 +15,7 @@ A major focus of the later phases involves implementing delta compression and ba
 ## 📅 Roadmap & Progress
 
 - [x] **Day 1:** Combinational Logic & Data Routing (ALUs, Priority Encoders, Structs/Enums)
-- [ ] **Day 2:** Arithmetic & DSP Foundations
+- [x] **Day 2:** Arithmetic & DSP Foundations
 - [ ] **Day 3:** Sequential Core & Registers
 - [ ] **Day 4:** Advanced Timing & Real-World Control
 - [ ] **Day 5:** FSM Architecture & Sequence Logic
@@ -32,3 +32,4 @@ cd Day01_Combinational_Logic
 iverilog -g2012 -o sim_out src/*.sv tb/*.sv
 vvp sim_out
 gtkwave day1_sim.vcd
+
