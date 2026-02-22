@@ -16,8 +16,8 @@ A major focus of the later phases involves implementing delta compression and ba
 
 - [x] **Day 1:** Combinational Logic & Data Routing (ALUs, Priority Encoders, Structs/Enums)
 - [x] **Day 2:** Arithmetic & DSP Foundations
-- [ ] **Day 3:** Sequential Core & Registers
-- [ ] **Day 4:** Advanced Timing & Real-World Control
+- [x] **Day 3:** Sequential Core & Registers
+- [x] **Day 4:** Advanced Timing & Real-World Control
 - [ ] **Day 5:** FSM Architecture & Sequence Logic
 - [ ] **Day 6:** Memory Structures & Buffering
 - [ ] **Day 7:** Clock Domain Crossing (CDC) & Arbitration
@@ -32,4 +32,5 @@ cd Day01_Combinational_Logic
 iverilog -g2012 -o sim_out src/*.sv tb/*.sv
 vvp sim_out
 gtkwave day1_sim.vcd
+
 
