@@ -1,0 +1,304 @@
+$date
+	Sat Feb 28 22:47:18 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_day6 $end
+$var wire 1 ! stack_full $end
+$var wire 1 " stack_empty $end
+$var wire 32 # stack_dout [31:0] $end
+$var wire 8 $ sp_data_out [7:0] $end
+$var wire 8 % rom_data [7:0] $end
+$var wire 32 & rf_rdata2 [31:0] $end
+$var wire 32 ' rf_rdata1 [31:0] $end
+$var wire 1 ( fifo_full $end
+$var wire 1 ) fifo_empty $end
+$var wire 8 * fifo_dout [7:0] $end
+$var wire 1 + cache_hit $end
+$var reg 28 , cache_addr [27:0] $end
+$var reg 1 - cache_flush $end
+$var reg 1 . cache_we $end
+$var reg 1 / clk $end
+$var reg 8 0 fifo_din [7:0] $end
+$var reg 1 1 fifo_rd $end
+$var reg 1 2 fifo_wr $end
+$var reg 5 3 rf_rd [4:0] $end
+$var reg 5 4 rf_rs1 [4:0] $end
+$var reg 5 5 rf_rs2 [4:0] $end
+$var reg 32 6 rf_wdata [31:0] $end
+$var reg 1 7 rf_we $end
+$var reg 8 8 rom_addr [7:0] $end
+$var reg 1 9 rst_n $end
+$var reg 8 : sp_addr [7:0] $end
+$var reg 8 ; sp_data_in [7:0] $end
+$var reg 1 < sp_we $end
+$var reg 32 = stack_din [31:0] $end
+$var reg 1 > stack_pop $end
+$var reg 1 ? stack_push $end
+$scope module dut51 $end
+$var wire 8 @ addr [7:0] $end
+$var wire 1 / clk $end
+$var reg 8 A data_out [7:0] $end
+$upscope $end
+$scope module dut52 $end
+$var wire 8 B addr [7:0] $end
+$var wire 1 / clk $end
+$var wire 8 C data_in [7:0] $end
+$var wire 1 < we $end
+$var reg 8 D data_out [7:0] $end
+$upscope $end
+$scope module dut55 $end
+$var wire 1 / clk $end
+$var wire 5 E rd [4:0] $end
+$var wire 5 F rs1 [4:0] $end
+$var wire 5 G rs2 [4:0] $end
+$var wire 1 9 rst_n $end
+$var wire 1 7 we $end
+$var wire 32 H write_data [31:0] $end
+$var wire 32 I read_data2 [31:0] $end
+$var wire 32 J read_data1 [31:0] $end
+$var integer 32 K i [31:0] $end
+$upscope $end
+$scope module dut56 $end
+$var wire 1 / clk $end
+$var wire 32 L data_in [31:0] $end
+$var wire 1 > pop $end
+$var wire 1 ? push $end
+$var wire 1 9 rst_n $end
+$var wire 1 ! full $end
+$var wire 1 " empty $end
+$var reg 32 M data_out [31:0] $end
+$var reg 5 N sp [4:0] $end
+$upscope $end
+$scope module dut58 $end
+$var wire 1 / clk $end
+$var wire 8 O data_in [7:0] $end
+$var wire 1 ( full $end
+$var wire 1 1 rd_en $end
+$var wire 1 9 rst_n $end
+$var wire 1 2 wr_en $end
+$var wire 1 ) empty $end
+$var reg 8 P data_out [7:0] $end
+$var reg 5 Q rd_ptr [4:0] $end
+$var reg 5 R wr_ptr [4:0] $end
+$upscope $end
+$scope module dut60 $end
+$var wire 1 + cache_hit $end
+$var wire 1 / clk $end
+$var wire 28 S cpu_addr [27:0] $end
+$var wire 1 - flush $end
+$var wire 1 9 rst_n $end
+$var wire 1 . we $end
+$var wire 1 T valid_bit $end
+$var wire 20 U tag [19:0] $end
+$var wire 20 V stored_tag [19:0] $end
+$var wire 8 W index [7:0] $end
+$var integer 32 X i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100000000 X
+b0 W
+b0 V
+b0 U
+0T
+b0 S
+b0 R
+b0 Q
+b0 P
+b0 O
+b0 N
+b0 M
+b0 L
+b100000 K
+b0 J
+b0 I
+b0 H
+b0 G
+b0 F
+b0 E
+bx D
+b0 C
+b0 B
+bx A
+b0 @
+0?
+0>
+b0 =
+0<
+b0 ;
+b0 :
+09
+b0 8
+07
+b0 6
+b0 5
+b0 4
+b0 3
+02
+01
+b0 0
+0/
+0.
+0-
+b0 ,
+0+
+b0 *
+1)
+0(
+b0 '
+b0 &
+bx %
+bx $
+b0 #
+1"
+0!
+$end
+#5000
+b10011 %
+b10011 A
+b100000000 X
+b100000 K
+1/
+#10000
+0/
+#15000
+b100000 K
+b100000000 X
+1/
+#20000
+0/
+#25000
+1/
+19
+#30000
+0/
+#35000
+b10111 %
+b10111 A
+1/
+b1 8
+b1 @
+#40000
+0/
+#45000
+1/
+b11011110101011011011111011101111 6
+b11011110101011011011111011101111 H
+17
+#50000
+0/
+#55000
+1/
+b11001010111111101011101010111110 6
+b11001010111111101011101010111110 H
+b1 3
+b1 E
+#60000
+0/
+#65000
+b11001010111111101011101010111110 &
+b11001010111111101011101010111110 I
+1/
+b1 5
+b1 G
+07
+#70000
+0/
+#75000
+0"
+b1 N
+1/
+b1000000000000 =
+b1000000000000 L
+1?
+#80000
+0/
+#85000
+b10 N
+1/
+b1000000000100 =
+b1000000000100 L
+#90000
+0/
+#95000
+b1000000000100 #
+b1000000000100 M
+b1 N
+1/
+1>
+0?
+#100000
+0/
+#105000
+b1000000000000 #
+b1000000000000 M
+1"
+b0 N
+1/
+#110000
+0/
+#115000
+0)
+b1 R
+1/
+b10101010 0
+b10101010 O
+12
+0>
+#120000
+0/
+#125000
+b10 R
+1/
+b10111011 0
+b10111011 O
+#130000
+0/
+#135000
+b1 Q
+b10101010 *
+b10101010 P
+1/
+11
+02
+#140000
+0/
+#145000
+1)
+b10 Q
+b10111011 *
+b10111011 P
+1/
+#150000
+0/
+#155000
+b11110001 W
+b10101011110011011110 U
+1/
+b1010101111001101111011110001 ,
+b1010101111001101111011110001 S
+01
+#160000
+0/
+#165000
+1+
+1T
+b10101011110011011110 V
+1/
+1.
+#170000
+0/
+#175000
+1/
+0.
+#180000
+0/
+#185000
+1/
