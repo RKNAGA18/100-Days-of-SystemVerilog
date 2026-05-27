@@ -1,0 +1,328 @@
+$date
+	Wed May 27 17:54:05 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module tb_day8 $end
+$var wire 1 ! apb_pready $end
+$var wire 1 " axil_awready $end
+$var wire 2 # axil_bresp [1:0] $end
+$var wire 1 $ axil_wready $end
+$var wire 1 % sb_s_ready $end
+$var wire 1 & sb_m_valid $end
+$var wire 32 ' sb_m_data [31:0] $end
+$var wire 1 ( axis_tvalid $end
+$var wire 1 ) axis_tready $end
+$var wire 1 * axis_tlast $end
+$var wire 32 + axis_tdata [31:0] $end
+$var wire 1 , axil_bvalid $end
+$var wire 32 - apb_prdata [31:0] $end
+$var reg 32 . apb_paddr [31:0] $end
+$var reg 1 / apb_penable $end
+$var reg 1 0 apb_psel $end
+$var reg 32 1 apb_pwdata [31:0] $end
+$var reg 1 2 apb_pwrite $end
+$var reg 32 3 axil_awaddr [31:0] $end
+$var reg 1 4 axil_awvalid $end
+$var reg 1 5 axil_bready $end
+$var reg 32 6 axil_wdata [31:0] $end
+$var reg 1 7 axil_wvalid $end
+$var reg 1 8 axis_start $end
+$var reg 1 9 clk $end
+$var reg 1 : rst_n $end
+$var reg 1 ; rx_fifo_full $end
+$var reg 1 < sb_m_ready $end
+$var reg 32 = sb_s_data [31:0] $end
+$var reg 1 > sb_s_valid $end
+$scope module dut71 $end
+$var wire 1 9 clk $end
+$var wire 1 < m_ready $end
+$var wire 1 : rst_n $end
+$var wire 32 ? s_data [31:0] $end
+$var wire 1 % s_ready $end
+$var wire 1 > s_valid $end
+$var reg 32 @ m_data [31:0] $end
+$var reg 1 & m_valid $end
+$var reg 32 A skid_data [31:0] $end
+$var reg 1 B skid_valid $end
+$upscope $end
+$scope module dut72 $end
+$var wire 32 C paddr [31:0] $end
+$var wire 1 9 pclk $end
+$var wire 1 / penable $end
+$var wire 1 ! pready $end
+$var wire 1 : presetn $end
+$var wire 1 0 psel $end
+$var wire 32 D pwdata [31:0] $end
+$var wire 1 2 pwrite $end
+$var reg 32 E prdata [31:0] $end
+$var reg 32 F reg0 [31:0] $end
+$var reg 32 G reg1 [31:0] $end
+$var reg 32 H reg2 [31:0] $end
+$var reg 32 I reg3 [31:0] $end
+$upscope $end
+$scope module dut73 $end
+$var wire 1 9 clk $end
+$var wire 1 : rst_n $end
+$var wire 1 8 start_tx $end
+$var wire 1 ) m_tready $end
+$var reg 1 J active $end
+$var reg 8 K count [7:0] $end
+$var reg 32 L m_tdata [31:0] $end
+$var reg 1 * m_tlast $end
+$var reg 1 ( m_tvalid $end
+$upscope $end
+$scope module dut74 $end
+$var wire 1 9 clk $end
+$var wire 1 ; internal_fifo_full $end
+$var wire 1 : rst_n $end
+$var wire 32 M s_tdata [31:0] $end
+$var wire 1 * s_tlast $end
+$var wire 1 ( s_tvalid $end
+$var wire 1 ) s_tready $end
+$upscope $end
+$scope module dut75 $end
+$var wire 1 9 clk $end
+$var wire 1 : rst_n $end
+$var wire 32 N s_axi_awaddr [31:0] $end
+$var wire 1 " s_axi_awready $end
+$var wire 1 4 s_axi_awvalid $end
+$var wire 1 5 s_axi_bready $end
+$var wire 2 O s_axi_bresp [1:0] $end
+$var wire 32 P s_axi_wdata [31:0] $end
+$var wire 1 $ s_axi_wready $end
+$var wire 1 7 s_axi_wvalid $end
+$var wire 1 Q write_happening $end
+$var reg 32 R control_reg [31:0] $end
+$var reg 1 , s_axi_bvalid $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 R
+0Q
+b0 P
+b0 O
+b0 N
+b0 M
+b0 L
+b0 K
+0J
+b0 I
+b0 H
+b0 G
+b0 F
+b0 E
+b0 D
+b0 C
+0B
+b0 A
+b0 @
+b0 ?
+0>
+b0 =
+1<
+0;
+0:
+09
+08
+07
+b0 6
+05
+04
+b0 3
+02
+b0 1
+00
+0/
+b0 .
+b0 -
+0,
+b0 +
+0*
+1)
+0(
+b0 '
+0&
+1%
+1$
+b0 #
+1"
+1!
+$end
+#5000
+19
+#10000
+09
+#15000
+19
+#20000
+09
+#25000
+b1010101010101010 '
+b1010101010101010 @
+1&
+0<
+b1010101010101010 =
+b1010101010101010 ?
+1>
+19
+1:
+#30000
+09
+#35000
+0%
+b1011101110111011 A
+1B
+b1011101110111011 =
+b1011101110111011 ?
+19
+#40000
+09
+#45000
+0B
+b1011101110111011 '
+b1011101110111011 @
+1%
+1<
+0>
+19
+#50000
+09
+#55000
+0&
+19
+#60000
+09
+#65000
+19
+#70000
+09
+#75000
+b11011110101011011011111011101111 1
+b11011110101011011011111011101111 D
+b100 .
+b100 C
+12
+10
+19
+#80000
+09
+#85000
+b11011110101011011011111011101111 G
+1/
+19
+#90000
+09
+#95000
+02
+0/
+00
+19
+#100000
+09
+#105000
+b1 K
+b10101010101010100000000000000000 +
+b10101010101010100000000000000000 L
+b10101010101010100000000000000000 M
+1(
+1J
+18
+19
+#110000
+09
+#115000
+b10 K
+b10101010101010100000000000000001 +
+b10101010101010100000000000000001 L
+b10101010101010100000000000000001 M
+08
+19
+#120000
+09
+#125000
+0)
+1;
+19
+#130000
+09
+#135000
+19
+#140000
+09
+#145000
+b11 K
+b10101010101010100000000000000010 +
+b10101010101010100000000000000010 L
+b10101010101010100000000000000010 M
+19
+1)
+0;
+#150000
+09
+#155000
+b100 K
+b10101010101010100000000000000011 +
+b10101010101010100000000000000011 L
+b10101010101010100000000000000011 M
+1*
+19
+#160000
+09
+#165000
+0*
+0(
+0J
+19
+#170000
+09
+#175000
+1Q
+b11001010111111101011101010111110 6
+b11001010111111101011101010111110 P
+17
+b10000 3
+b10000 N
+14
+19
+#180000
+09
+#185000
+15
+1,
+b11001010111111101011101010111110 R
+0Q
+07
+04
+19
+#190000
+09
+#195000
+05
+19
+#200000
+09
+#205000
+19
+#210000
+09
+#215000
+19
+#220000
+09
+#225000
+19
+#230000
+09
+#235000
+19
+#240000
+09
+#245000
+19
